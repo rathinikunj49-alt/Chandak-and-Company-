@@ -233,3 +233,88 @@ model-viewer {
 .custom-footer span {
   color:#ffd966;
 }
+
+/* ================= MOBILE FIXES ================= */
+@media (max-width: 768px) {
+
+  /* -------- BODY BACKGROUND (lighter for mobile) -------- */
+  body {
+    background: #8b3a00; /* slightly softer tone */
+  }
+
+  /* -------- HERO / REVOLVING SECTION -------- */
+  .banner {
+    height: 85vh;
+  }
+
+  .slider {
+    top: 8%;
+    width: 140px;
+    height: 140px;
+  }
+
+  .slider .item {
+    transform:
+      rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+      translateZ(320px);
+  }
+
+  /* -------- CENTER BRAND TEXT -------- */
+  .content h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    padding: 0 12px;
+  }
+
+  /* -------- SECTION 2 -------- */
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  model-viewer {
+    width: 90vw;
+    height: 40vh;
+    margin-top: 20px;
+  }
+
+  /* -------- FILM STRIP / REEL -------- */
+  .film-strip {
+    margin-top: 25px;
+    transform: scale(0.85);
+  }
+
+  /* -------- VIDEO SECTION -------- */
+  .video-container {
+    width: 92%;
+  }
+
+  .stranger-title {
+    font-size: 1.2rem;
+  }
+
+  /* -------- PRODUCT CARDS -------- */
+  .cards-3d-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card-3d {
+    width: 85%;
+    height: 360px;
+  }
+
+  /* -------- FOOTER -------- */
+  .custom-footer {
+    font-size: 0.85rem;
+  }
+}
