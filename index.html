@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chandak & Company</title>
+
+  <link href="https://fonts.cdnfonts.com/css/benguiat-bold" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= SECTION 1 (DO NOT TOUCHED) ================= -->
+<div class="banner">
+
+  <div class="slider" style="--quantity: 6">
+    <div class="item" style="--position:1"><img src="images/Bhujia.jpeg"></div>
+    <div class="item" style="--position:2"><img src="images/Biscuits.jpeg"></div>
+    <div class="item" style="--position:3"><img src="images/Muri.jpeg"></div>
+    <div class="item" style="--position:4"><img src="images/Bhujia.jpeg"></div>
+    <div class="item" style="--position:5"><img src="images/snacky.jpeg"></div>
+    <div class="item" style="--position:6"><img src="images/Sonrolls.jpeg"></div>
+  </div>
+
+  <div class="content">
+    <h1>CHANDAK AND<br>COMPANY</h1>
+  </div>
+
+</div>
+
+<!-- ================= SECTION 2 ================= -->
+<div class="container">
+  <div class="left-content">
+    <h1 class="heading">FAMOUS FOODS, ONE ROOF</h1>
+    <p class="description">
+      We bring India’s most iconic food brands to your city —
+      Karachi Bakery from Hyderabad, Jhal Muri from Kolkata,
+      Mini Son Papdi from Indore, Khakhra from Gujarat and more.
+    </p>
+
+    <a href="#products" class="enquire-btn">VIEW PRODUCTS</a>
+
+    <!-- FILM STRIP -->
+    <div class="film-strip-wrapper">
+      <div class="film-strip">
+        <img src="images/Biscuits.jpeg">
+        <img src="images/Muri.jpeg">
+        <img src="images/Sonrolls.jpeg">
+        <img src="images/snacky.jpeg">
+        <img src="images/Bhujia.jpeg">
+        <img src="images/Biscuits.jpeg">
+        <img src="images/Muri.jpeg">
+      </div>
+    </div>
+  </div>
+
+  <model-viewer src="/3Dmodels/stranger_things_demogorgon_animated.glb"
+    autoplay camera-controls disable-zoom exposure="0.9">
+  </model-viewer>
+</div>
+
+<!-- ================= SECTION 3 ================= -->
+<section class="stranger-section">
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="/video/Stranger things .mp4" type="video/mp4"/>
+    </video>
+    <h2 class="stranger-title">OUR DISTRIBUTION NETWORK</h2>
+  </div>
+</section>
+
+<!-- ================= SECTION 4 : PRODUCTS ================= -->
+<h2 class="closing-title" id="products">OUR PRODUCTS</h2>
+
+<section class="cards-3d-section">
+
+  <div class="card-3d">
+    <div class="card-inner">
+      <div class="card-front"><img src="images/Biscuits.jpeg"></div>
+      <div class="card-back">
+        <h2>Karachi Bakery</h2>
+        <p>Authentic Hyderabadi biscuits loved nationwide.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-3d">
+    <div class="card-inner">
+      <div class="card-front"><img src="images/Muri.jpeg"></div>
+      <div class="card-back">
+        <h2>Jhal Muri</h2>
+        <p>Kolkata’s iconic street snack with bold spice.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-3d">
+    <div class="card-inner">
+      <div class="card-front"><img src="images/Sonrolls.jpeg"></div>
+      <div class="card-back">
+        <h2>Mini Son Papdi</h2>
+        <p>Indore’s melt-in-mouth traditional sweet.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-3d">
+    <div class="card-inner">
+      <div class="card-front"><img src="images/snacky.jpeg"></div>
+      <div class="card-back">
+        <h2>Khakhra</h2>
+        <p>Crispy Gujarati delight, light and flavorful.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-3d">
+    <div class="card-inner">
+      <div class="card-front"><img src="images/Bhujia.jpeg"></div>
+      <div class="card-back">
+        <h2>Bhujia</h2>
+        <p>Spicy, crunchy snack loved across generations.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="custom-footer">
+  <p>© Designed & Developed by <span>NIKUNJ RATHI</span></p>
+</footer>
+
+</body>
+</html>
